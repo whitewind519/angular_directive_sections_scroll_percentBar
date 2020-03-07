@@ -1,0 +1,9 @@
+<div appScrollPercentage (scrollPercentageEvent)="changeScrollPercentage($event)">
+  <h1 style="color: blue;">Section One</h1>
+  <app-percentbar [percentValue]="percentValue" [calc_percentage]="calc_percentage"></app-percentbar>
+  <div class="section-one">
+      <h2 *ngFor="let i of demoRange">
+          Content goes here ...
+      </h2>
+  </div>
+</div>
